@@ -1,0 +1,54 @@
+{  
+    "version": "2.0.0",  
+    "tasks": [
+        {
+            "label": "dotnet: clean",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "clean"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "dotnet: build",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "dotnet: run",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "run"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "dotnet",
+            "task": "build /Users/user/Downloads/Start/Overview/MyConsoleApp/MyConsoleApp.csproj",
+            "file": "/Users/user/Downloads/Start/Overview/MyConsoleApp/MyConsoleApp.csproj",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "dotnet: build /Users/user/Downloads/Start/Overview/MyConsoleApp/MyConsoleApp.csproj"
+        }
+    ]  
+}
