@@ -4,7 +4,7 @@
 string teststr = "The quick brown Fox jumps over the lazy Dog";
 
 // TODO: Contains determines whether a string contains certain content
-Console.WriteLine($"{teststr.Contains("fox")}";
+Console.WriteLine($"{teststr.Contains("fox")}");
 Console.WriteLine($"{teststr.Contains("fox", StringComparison.CurrentCultureIgnoreCase)}");
 
 // TODO: StartsWith and EndsWith determine if a string starts 
@@ -23,7 +23,7 @@ Console.WriteLine($"{teststr.LastIndexOf("the")}");
 // TODO: Determining empty, null, or whitespace
 string str1 = null;
 string str2 = "   ";
-string str3 = String.Empty;0
+string str3 = String.Empty;
 
 Console.WriteLine($"{String.IsNullOrEmpty(str1)}");
 Console.WriteLine($"{String.IsNullOrWhiteSpace(str2)}");
